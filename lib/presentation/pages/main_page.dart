@@ -3,15 +3,14 @@ import 'package:provider/provider.dart';
 
 import '../../application/state/Counter.dart';
 import '../widgets/button_widget.dart';
-import '../widgets/text_widget_a.dart';
-import '../widgets/text_widget_b.dart';
-import '../widgets/text_widget_c.dart';
+import '../widgets/text_widget.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Flutter Demo Home Page'),
@@ -27,12 +26,8 @@ class MainPage extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
-                  TextWidgetA(),
-                  TextWidgetB(),
-                  TextWidgetC(),
-                  ButtonWidgetA(),
-                  ButtonWidgetB(),
-                  ButtonWidgetC()
+                  CounterTextWidget(),
+                  ButtonWidget(),
                 ],
               ),
             ),
