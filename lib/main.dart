@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
-import 'package:flutter_sample_provider/application/applicatoin.dart';
+import 'package:flutter_sample_provider/application/application.dart';
 
 void main() {
   runApp(const MyApp());
